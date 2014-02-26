@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.7
+FROM phusion/baseimage:0.9.8
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
 #------------------------------------------------------------------------------
