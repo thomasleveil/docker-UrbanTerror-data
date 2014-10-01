@@ -1,6 +1,6 @@
 .PHONY: build shell
 
-DOCKER_IMAGE := tomdesinto/urbanterror-data:4.2.019
+DOCKER_IMAGE = tomdesinto/urbanterror-data:4.2.020
 
 build:
 	docker build --rm --tag "$(DOCKER_IMAGE)" .
