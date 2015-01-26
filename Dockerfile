@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.15
+FROM phusion/baseimage:0.9.16
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
 #------------------------------------------------------------------------------
@@ -17,9 +17,9 @@ RUN useradd --home-dir /home/urt --create-home urt
 ## Download Urban Terror
 ## if links are broken, check http://www.urbanterror.info/downloads/
 RUN aria2c --file-allocation=none \
-	http://up.barbatos.fr/urt/UrbanTerror42_full022.zip \
-	http://mirror.urtstats.net/urbanterror/UrbanTerror42_full022.zip \
-	http://files.cucurb.net/UrbanTerror/UrbanTerror42_full022.zip \
+	http://up.barbatos.fr/urt/UrbanTerror42_full023.zip \
+	http://mirror.urtstats.net/urbanterror/UrbanTerror42_full023.zip \
+	http://files.cucurb.net/UrbanTerror/UrbanTerror42_full023.zip \
 	--dir=/tmp &&\
     unzip /tmp/UrbanTerror42_full*.zip -d /home/urt && rm /tmp/UrbanTerror42_full*.zip &&\
     chown -R urt:urt /home/urt/
