@@ -18,10 +18,9 @@ RUN useradd --home-dir /home/urt --create-home urt
 ## Download Urban Terror
 ## if links are broken, check http://www.urbanterror.info/downloads/
 RUN aria2c --file-allocation=none \
-  http://www.happyurtday.com/releases/4x/UrbanTerror431_full.zip \
-  http://files.cucurb.net/UrbanTerror/UrbanTerror431_full.zip \
-  https://up.barbatos.fr/urt/UrbanTerror431_full.zip \
-  http://cdn.fs1.urbanterror.info/urt/43/releases/zips/UrbanTerror431_full.zip \
+  http://www.happyurtday.com/releases/4x/UrbanTerror432_full.zip \
+  http://files.cucurb.net/UrbanTerror/UrbanTerror432_full.zip \
+  http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror432_full.zip \
   --dir=/tmp \
     && unzip /tmp/UrbanTerror43*.zip -d /home/urt && rm /tmp/UrbanTerror43*.zip \
     && chown -R urt:urt /home/urt/ \
