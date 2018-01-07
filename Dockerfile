@@ -4,9 +4,8 @@ FROM phusion/baseimage:0.9.22
 #------------------------------------------------------------------------------
 
 ## Install dependencies
-RUN DEBIAN_FRONTEND=noninteractive \
-  apt-get update &&\
-  apt-get -y install \
+RUN apt-get update \
+  && apt-get -y install \
     aria2 \
     unzip
 
