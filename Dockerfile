@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.19
+FROM phusion/baseimage:0.9.22
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
 #------------------------------------------------------------------------------
@@ -10,10 +10,10 @@ RUN DEBIAN_FRONTEND=noninteractive \
   apt-get update &&\
   apt-get -y install \
     aria2 \
-    unzip 
+    unzip
 
 ## Create a urt user
-RUN useradd --home-dir /home/urt --create-home urt 
+RUN useradd --home-dir /home/urt --create-home urt
 
 ## Download Urban Terror
 ## if links are broken, check http://www.urbanterror.info/downloads/
